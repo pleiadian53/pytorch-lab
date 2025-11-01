@@ -1,0 +1,31 @@
+name: pytorch-lab
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # PyTorch
+  - pytorch>=2.1
+  - torchvision
+  # Data Science Core
+  - numpy
+  - pandas
+  - polars  # Fast DataFrame library
+  # Visualization
+  - matplotlib
+  - seaborn
+  - plotly  # Interactive plots
+  # Machine Learning
+  - scikit-learn
+  # Jupyter
+  - jupyter
+  - ipykernel
+  - ipywidgets  # For interactive widgets in notebooks
+  # Development
+  - pip:
+    - pydantic>=2.6
+    - typer>=0.12.3
+    - rich>=13.7
+    - tqdm
